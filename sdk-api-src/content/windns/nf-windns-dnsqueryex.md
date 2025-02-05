@@ -106,7 +106,7 @@ The call was successful.
 </dl>
 </td>
 <td width="60%">
-Either the <i>pQueryRequest</i> or <i>pQueryRequest</i> parameters are uninitialized or contain the wrong version. 
+Either the <i>pQueryRequest</i> or <i>pQueryResults</i> parameters are uninitialized or contain the wrong version. 
 
 </td>
 </tr>
@@ -153,7 +153,7 @@ The following conditions invoke a synchronous call to <b>DnsQueryEx</b> and do n
 
 <ul>
 <li>The <a href="/windows/win32/api/windns/nc-windns-dns_query_completion_routine">DNS_QUERY_COMPLETION_ROUTINE</a> callback is omitted from the <b>pQueryCompleteCallback</b> member of <i>pQueryRequest</i>.</li>
-<li>A query is for the local machine name and <a href="/windows/win32/api/windns/ns-windns-dns_a_data">A</a> or <a href="/windows/win32/api/windns/ns-windns-dns_aaaa_data">AAAA</a> type Resource Records (RR).</li>
+<li>A query is for the local machine name and <a href="/windows/win32/api/windns/nf-windns-dnsquery_a">A</a> or <a href="/windows/win32/api/windns/ns-windns-dns_aaaa_data">AAAA</a> type Resource Records (RR).</li>
 <li>A call to <b>DnsQueryEx</b> queries an IPv4 or IPv6 address.</li>
 <li>A call to <b>DnsQueryEx</b> returns in error.</li>
 </ul>

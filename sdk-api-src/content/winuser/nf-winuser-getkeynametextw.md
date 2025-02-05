@@ -107,7 +107,7 @@ Character keys that are mapped to the 'A'..'Z' [virtual-key codes](/windows/win3
 
 This method might not work properly with some [keyboard layouts](/globalization/windows-keyboard-layouts) that produce multiple characters (such as ligatures) or supplementary Unicode characters on a single key press. 
 
-The winuser.h header defines GetKeyNameText as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+The winuser.h header defines GetKeyNameText as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 ## -see-also
 

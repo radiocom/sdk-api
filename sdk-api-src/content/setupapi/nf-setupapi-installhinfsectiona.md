@@ -159,7 +159,7 @@ For example, the following command line runs the DefaultInstall section of the S
 
 
 > [!NOTE]
-> The setupapi.h header defines InstallHinfSection as an alias which automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
+> The setupapi.h header defines InstallHinfSection as an alias that automatically selects the ANSI or Unicode version of this function based on the definition of the UNICODE preprocessor constant. Mixing usage of the encoding-neutral alias with code that is not encoding-neutral can lead to mismatches that result in compilation or runtime errors. For more information, see [Conventions for Function Prototypes](/windows/win32/intl/conventions-for-function-prototypes).
 
 > [!CAUTION]
 > When used on an architecture other than x86 or amd64, or when used on a system in [S mode](/windows-hardware/manufacture/desktop/windows-10-s-overview), InstallHInfSection requires that the INF file have a [INF Version section](/windows-hardware/drivers/install/inf-version-section) with a CatalogFile directive that points at a signed catalog file that contains the hash of the INF file and any files the INF file references via a [INF SourceDisksFiles section](/windows-hardware/drivers/install/inf-sourcedisksfiles-section).
